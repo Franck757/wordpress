@@ -1,0 +1,279 @@
+/* BASE */
+*{
+	box-sizing:border-box;
+}
+.nomargin
+{
+	margin:0 !important;
+}
+.clearfloat
+{
+	clear:both;
+}
+.clearafter
+{
+	content:"";
+	display:block;
+	clear:both;
+}
+/* Alignement des images en float*/
+.alignleft
+{
+	float:left;
+	margin-right:10px;
+	max-width:50%;
+}
+.alignright
+{
+	float:right;
+	margin-left:10px;
+	max-width:50%;
+}
+
+/* FONTS AND GRAPHICS */
+body
+{
+	font-family:"Playfair Display", serif;
+	color:#344e5d;
+}
+header nav li {
+	display: inline-block;
+}
+header nav ul {
+	margin: 0;
+	padding: 0;
+}
+h1, header nav a
+{
+	font-family: "Kaushan Script", cursive;
+}
+a
+{
+	color:#a966c5;
+	text-decoration:none;
+}
+.bg-purple
+{
+	background:#8b76d1;
+}
+.bg-purple-grad
+{
+	background:url(../img/background_section.jpg) top left;
+	background-size:cover;
+	overflow:auto;
+}
+.btn
+{
+	padding:15px 45px;
+	border:0;
+}
+.btn-purple
+{
+	color:#fff;
+	background:#8a62c2;
+}
+.text-shadow
+{
+	text-shadow: 2px 2px #000;
+}
+
+/* LAYOUT */
+.container
+{
+	width:90%;
+	margin:0 auto;
+}
+
+/* gestion des colonnes */
+.col-one-third
+{
+	width:31%;
+	float:left;
+	margin:1%;
+}
+.col-two-test 
+{
+	width:67%;
+	float: left;
+}
+
+/* HEADER */
+header
+{
+	background:url(../img/fond.jpg) bottom center fixed;
+	background-size:cover;
+	text-align:center;
+}
+header nav
+{
+	background:rgba(255,255,255,0.3);
+}
+header nav a
+{
+	color:#fff;
+	display:inline-block;
+	padding:15px;
+	font-size:1.5em;
+	text-decoration:none;
+}
+header nav a i.fas, header nav a i.far
+{
+	display:block;
+}
+header .site-title
+{
+	color:#fff;
+	padding:150px 0 300px 0;
+	font-size:4em;
+	font-weight:normal;
+}
+header #promo
+{
+	background:rgba(255,255,255,0.2);
+	padding:15px;
+	margin:0;
+
+}
+header #promo a
+{
+	color:#fff;
+}
+/* MAIN */
+section
+{
+	padding:15px 0;
+	overflow:auto;
+}
+.section-title
+{
+	text-align:center;
+}
+/* TABLEAUX  */
+table
+{
+	width:100%;
+	border-collapse:collapse;
+	margin:15px 0;
+	border:1px solid #cdcdcd;
+}
+table thead th
+{
+	background:#c4a9de;
+	color:#fff;
+	text-align:left;
+	padding:15px;
+	font-family: "Kaushan Script", cursive;
+	font-size:1.6em;
+}
+table tr td
+{
+	border:1px solid #cdcdcd;
+	border-collapse:collapse;
+	padding:15px;
+	text-align:center;
+}
+/* Utilisation de la pseudo class nth-child pour distinguer les rows pairs et impairs */
+table tr:nth-child(even) td
+{
+	background:#f2f2f2;
+}
+table tr td:first-child
+{
+	text-align:left;
+}
+/* FORMULAIRES */
+form
+{
+	text-align:center;
+}
+form fieldset
+{
+	padding:30px;
+	margin-bottom:30px;
+	border:1px solid #dfdfdf ;
+}
+form fieldset legend
+{
+
+	text-align:left;
+}
+form input[type="text"],form input[type="email"]
+{
+	border:0;
+	border-bottom:1px solid #dfdfdf ;
+}
+
+form input[type=checkbox],form input[type=radio]
+{
+	margin:0px 5px 0px 15px;
+}
+form select
+{
+	width:100%;
+	padding:5px;
+}
+
+/* FOOTER */
+.site-footer
+{
+	color:#fff;
+	margin:0;
+	text-align:center;
+	padding:15px;
+}
+/* HOMEPAGE */
+#actu
+{
+	padding:30px;
+	overflow:auto;
+}
+#actu .item
+{
+
+	margin:15px;
+	padding:15px;
+	overflow:auto;
+}
+#actu .item:not(:first-child):before
+{
+	content:"";
+	display:block;
+	height:1px;
+	width:90%;
+	background:#edcede;
+}
+
+/* Selection du premier élément via la pseudo classe first-child */
+#actu .item:first-child
+{
+	border-top:0;
+}
+#actu .item .item-title
+{
+	text-align:center;
+	margin-bottom:30px;
+}
+#about
+{
+	text-align:center;
+}
+#about .item
+{
+	padding:15px;
+	color:#fff;
+}
+#about .item .item-img
+{
+	max-width:70%;
+	height:auto;
+}
+
+/* TEMPLATES */
+
+.post-type-archive-books main .container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	text-align: center;
+
+}
